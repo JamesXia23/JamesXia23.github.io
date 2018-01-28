@@ -208,18 +208,42 @@
 </ul>
 </li>
 </ul>
-<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>安装 Hexo 之前需要安装Node.js</p>
+<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>安装 Hexo 之前需要安装Node.js，Node.js是什么可以参考我的另一篇<a href="https://jamesxia23.github.io/2017/09/25/%E6%9E%84%E5%BB%BA%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%8E%AF%E5%A2%83/">文章</a><br>，这里不再赘述，直接上安装步骤：</p>
+<ol>
+<li><p>安装nvm</p>
 <ul>
-<li><a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载链接</a></li>
-<li>安装很简单，一直下一步就行</li>
-<li><p>安装完成后，记得检查我的电脑-右键属性-环境变量-高级系统设置-环境变量 path 里面有没有node.js的安装目录，没有的话就添加进去</p>
-  <img title="path" alt="path" src="http://oud51lkoe.bkt.clouddn.com/images/post1-2.png">
+<li><p>Mac&amp;linux安装nvm</p>
+<ul>
+<li><p>首先确保你的用户主目录下有.bash_profile文件，没有就创建一个：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">touch .bash_profile</div></pre></td></tr></table></figure>
 </li>
+<li><p>然后运行curl命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash</div></pre></td></tr></table></figure>
+</li>
+<li><p>最后验证是否安装成功：</p>
+<img title="mac验证nvm安装" alt="mac验证nvm安装" src="http://oud51lkoe.bkt.clouddn.com/images/post5-1.png"></li>
+</ul>
+</li>
+<li>Windows安装nvm<ul>
+<li>下载 <a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">nvm</a> <img title="windows上下载nvm" alt="windows上下载nvm" src="http://oud51lkoe.bkt.clouddn.com/images/post5-2.png"></li>
+<li>下载完解压，双击nvm-setup安装，一直下一步就行了</li>
+<li>安装完在cmd中键入<code>nvm version</code>验证是否安装成功</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>安装Node.js</p>
+<ul>
+<li>打开终端，运行命令 <code>nvm install node版本号</code> ，如： <code>nvm install 8.4.0</code></li>
+<li>待到安装完成后，运行 <code>nvm list</code> 可以查看系统中所有存在的node版本</li>
+<li>使用 <code>nvm use 版本号</code> 可以切换当前使用的nvm的版本</li>
 <li><p>最后在命令行验证是否配置成功：</p>
   <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">node --version</div></pre></td></tr></table></figure>
   <img title="version" alt="version" src="http://oud51lkoe.bkt.clouddn.com/images/post1-3.png">
 </li>
 </ul>
+</li>
+</ol>
 <h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>重头戏来了，安装完 git 和 Node.js 后，就要来安装我们的博客系统了，附上 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档</a></p>
 <h3 id="什么是-Hexo"><a href="#什么是-Hexo" class="headerlink" title="什么是 Hexo"></a>什么是 Hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <h3 id="克隆远程仓库到本地"><a href="#克隆远程仓库到本地" class="headerlink" title="克隆远程仓库到本地"></a>克隆远程仓库到本地</h3><p>刚才我们创建了两个仓库，现在只需要克隆hexo-source一个就行，剩下那个不需要在本地管理。</p>
