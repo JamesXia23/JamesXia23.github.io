@@ -177,21 +177,30 @@
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
                 <p>刚开始接触python，只知道py有两个大版本：2.x和3.x，而且在语法上是有差别的，所以百度查了查，研究了两个py版本如何共存</p>
-<h2 id="下载python"><a href="#下载python" class="headerlink" title="下载python"></a>下载python</h2><a href="https://www.python.org/downloads/windows/" target="_blank" rel="external">下载地址</a>，进去之后选择2.x的某一个版本和3.x的某一个版本下载下来，我选择了当前最新的2.7.14和3.63<br><br>## 安装python<br>既然两个版本要共存，那我建议两个版本安装在同一个文件夹下，方便管理，我是直接将两个版本安装在<code>C:\python</code>下，分别为：<br><img title="py安装目录" alt="py安装目录" src="http://oud51lkoe.bkt.clouddn.com/images/post6-1.png">
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>在系统环境变量<code>path</code>中添加四个路径，分别是：</p>
+<h2>下载python</h2>
+<p><a href="https://www.python.org/downloads/windows/" target="_blank" rel="external">下载地址</a>，进去之后选择2.x的某一个版本和3.x的某一个版本下载下来，我选择了当前最新的2.7.14和3.63</p>
+<h2>安装python</h2>
+<p>既然两个版本要共存，那我建议两个版本安装在同一个文件夹下，方便管理，我是直接将两个版本安装在<code>C:\python</code>下，分别为：
+<img title="py安装目录" alt="py安装目录" src="http://oud51lkoe.bkt.clouddn.com/images/post6-1.png"></p>
+<h2>配置环境变量</h2>
+<p>在系统环境变量<code>path</code>中添加四个路径，分别是：</p>
 <ul>
 <li>2.7.14版本的py目录和py目录中的Scripts</li>
-<li>3.63版本的py目录和py目录中的Scripts<img title="配置环境变量" alt="配置环境变量" src="http://oud51lkoe.bkt.clouddn.com/images/post6-2.png">
-</li>
+<li>3.63版本的py目录和py目录中的Scripts
+<img title="配置环境变量" alt="配置环境变量" src="http://oud51lkoe.bkt.clouddn.com/images/post6-2.png"></li>
 </ul>
-<h2 id="修改可执行文件的名称"><a href="#修改可执行文件的名称" class="headerlink" title="修改可执行文件的名称"></a>修改可执行文件的名称</h2><p>选择当前要开发的主力版本，比如我现在要以2.7.14作为主力版本，则进入3.63的目录中，重命名目录中的<code>python.exe</code>和<code>pythonw.exe</code>为<code>python3.exe</code>和<code>pythonw3.exe</code></p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><ul>
-<li>python：<ul>
+<h2>修改可执行文件的名称</h2>
+<p>选择当前要开发的主力版本，比如我现在要以2.7.14作为主力版本，则进入3.63的目录中，重命名目录中的<code>python.exe</code>和<code>pythonw.exe</code>为<code>python3.exe</code>和<code>pythonw3.exe</code></p>
+<h2>测试</h2>
+<ul>
+<li>python：
+<ul>
 <li>在cmd下输入<code>python</code>会进入主力版本python</li>
 <li>输入<code>python3</code>会进入另一个版本的python</li>
 </ul>
 </li>
-<li>pip：<ul>
+<li>pip：
+<ul>
 <li>在cmd下直接输入pip命令，如安装request：<code>pip install request</code>会启动2.7.14的pip去下载包</li>
 <li>如果要使用3.63的pip，则要键入：<code>python3 -m pip install request</code></li>
 </ul>
@@ -227,7 +236,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载python"><span class="toc-text">下载python</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置环境变量"><span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改可执行文件的名称"><span class="toc-text">修改可执行文件的名称</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试"><span class="toc-text">测试</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">下载python</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">安装python</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">修改可执行文件的名称</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">测试</span></a></li></ol>
                 </div>
             </div>
         </div>
